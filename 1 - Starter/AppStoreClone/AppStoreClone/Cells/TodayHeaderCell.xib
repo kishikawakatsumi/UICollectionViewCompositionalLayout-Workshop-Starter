@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="DAK-38-haa" customClass="TodayHeaderCell" customModule="AppStoreClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="83"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LYB-LN-NHv">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="83"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="s2F-5n-A4e">
+                        <rect key="frame" x="0.0" y="12" width="370" height="67"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="WEDNESDAY, MAY 27" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PoA-BW-R3c">
+                                <rect key="frame" x="0.0" y="0.0" width="150.5" height="18"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wZ-85-uIy">
+                                <rect key="frame" x="0.0" y="26" width="88" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GJD-xE-Urn">
+                        <rect key="frame" x="378" y="40.5" width="36" height="36"/>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="GJD-xE-Urn" secondAttribute="height" multiplier="1:1" id="251-H6-LTJ"/>
+                            <constraint firstAttribute="height" constant="36" id="cnU-Hh-fPd"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="18"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="s2F-5n-A4e" secondAttribute="bottom" constant="4" id="1x8-Mf-iFg"/>
+                    <constraint firstItem="s2F-5n-A4e" firstAttribute="leading" secondItem="LYB-LN-NHv" secondAttribute="leading" id="6iV-2J-wvT"/>
+                    <constraint firstItem="GJD-xE-Urn" firstAttribute="leading" secondItem="s2F-5n-A4e" secondAttribute="trailing" constant="8" id="7WG-Sv-v23"/>
+                    <constraint firstItem="GJD-xE-Urn" firstAttribute="centerY" secondItem="3wZ-85-uIy" secondAttribute="centerY" id="bwT-52-2Hb"/>
+                    <constraint firstAttribute="trailing" secondItem="GJD-xE-Urn" secondAttribute="trailing" id="pS8-mN-suS"/>
+                    <constraint firstItem="s2F-5n-A4e" firstAttribute="top" secondItem="LYB-LN-NHv" secondAttribute="top" constant="12" id="tZX-Q0-6if"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="414" height="90"/>
+            <point key="canvasLocation" x="15.942028985507248" y="72.991071428571431"/>
+        </collectionViewCell>
+    </objects>
+</document>

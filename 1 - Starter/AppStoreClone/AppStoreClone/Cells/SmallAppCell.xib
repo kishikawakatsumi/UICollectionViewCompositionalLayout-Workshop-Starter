@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="f1S-Bt-P2a" customClass="SmallAppCell" customModule="AppStoreClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="86"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="epb-So-ctN">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="86"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ERH-iv-zkW">
+                        <rect key="frame" x="0.0" y="9" width="68" height="68"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ERH-iv-zkW" secondAttribute="height" multiplier="1:1" id="5JF-6t-Sfa"/>
+                            <constraint firstAttribute="height" constant="68" id="tGR-xo-bgb"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="13"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Q0q-al-6ZD">
+                        <rect key="frame" x="80" y="21" width="254" height="44.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2T-jh-y11">
+                                <rect key="frame" x="0.0" y="0.0" width="254" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56c-eW-zIa">
+                                <rect key="frame" x="0.0" y="26.5" width="254" height="18"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yQ-6h-Zkt">
+                        <rect key="frame" x="342" y="28" width="72" height="30"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="J4M-5q-DZd"/>
+                            <constraint firstAttribute="width" constant="72" id="xsM-KK-Dua"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <state key="normal" title="GET"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Q0q-al-6ZD" firstAttribute="centerY" secondItem="epb-So-ctN" secondAttribute="centerY" id="5de-Q3-FRj"/>
+                    <constraint firstItem="ERH-iv-zkW" firstAttribute="leading" secondItem="epb-So-ctN" secondAttribute="leading" id="7G9-Uu-vzn"/>
+                    <constraint firstAttribute="trailing" secondItem="8yQ-6h-Zkt" secondAttribute="trailing" id="8bo-fo-tOZ"/>
+                    <constraint firstItem="8yQ-6h-Zkt" firstAttribute="leading" secondItem="Q0q-al-6ZD" secondAttribute="trailing" constant="8" id="ApN-cp-IaN"/>
+                    <constraint firstItem="ERH-iv-zkW" firstAttribute="top" relation="greaterThanOrEqual" secondItem="epb-So-ctN" secondAttribute="top" constant="9" id="FSR-FY-nxh"/>
+                    <constraint firstItem="Q0q-al-6ZD" firstAttribute="leading" secondItem="ERH-iv-zkW" secondAttribute="trailing" constant="12" id="Is1-hy-oTC"/>
+                    <constraint firstAttribute="bottom" secondItem="Q0q-al-6ZD" secondAttribute="bottom" priority="750" constant="2" id="J6j-1I-a0X"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ERH-iv-zkW" secondAttribute="bottom" constant="9" id="LjA-v5-2WU"/>
+                    <constraint firstItem="8yQ-6h-Zkt" firstAttribute="centerY" secondItem="Q0q-al-6ZD" secondAttribute="centerY" id="R8A-BS-nMR"/>
+                    <constraint firstItem="Q0q-al-6ZD" firstAttribute="top" secondItem="epb-So-ctN" secondAttribute="top" priority="750" constant="2" id="WFf-st-H9P"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <point key="canvasLocation" x="305.79710144927537" y="32.8125"/>
+        </collectionViewCell>
+    </objects>
+</document>
