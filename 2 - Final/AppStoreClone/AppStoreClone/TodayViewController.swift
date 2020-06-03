@@ -39,12 +39,10 @@ final class TodayViewController: UIViewController {
                 let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
                 let item = NSCollectionLayoutItem(layoutSize: itemSize)
 
-                let innerGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.893), heightDimension: .fractionalHeight(1))
-                let innerGroup = NSCollectionLayoutGroup.vertical(layoutSize: innerGroupSize, subitems: [item])
-                innerGroup.edgeSpacing = NSCollectionLayoutEdgeSpacing(leading: .flexible(0), top: nil, trailing: .flexible(0), bottom: nil)
-
                 let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalWidth(1.179))
-                let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitems: [innerGroup])
+                let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitems: [item])
+
+                group.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20)
 
                 let section = NSCollectionLayoutSection(group: group)
                 return section
